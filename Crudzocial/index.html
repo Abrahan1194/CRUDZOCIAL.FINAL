@@ -1,0 +1,81 @@
+<!-- Documento HTML -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Inicio - Crudzocial</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Estilos de Bootstrap e iconos -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+
+  <!-- Barra de navegacion -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between">
+      <a class="navbar-brand fw-bold" href="#"><i class="bi bi-house-door-fill me-2"></i>Crudzocial</a>
+      <div class="d-flex">
+        <!-- Enlace al perfil -->
+        <a href="profile.html" class="btn btn-outline-light me-2">
+          <i class="bi bi-person-circle me-1"></i>Perfil
+        </a>
+        <!-- Boton de cerrar sesion -->
+        <button id="logout" class="btn btn-outline-danger">
+          <i class="bi bi-box-arrow-right me-1"></i>Cerrar Sesion
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenido principal -->
+  <div class="container py-5">
+    <div class="row">
+      
+      <!-- Seccion de notas -->
+      <div class="col-md-6 mb-4">
+        <h3 class="text-white fw-semibold mb-3"><i class="bi bi-journal-text me-2"></i>Notas de la Comunidad</h3>
+        <div class="card shadow rounded-4 mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Crear nueva nota</h5>
+            <div class="d-flex">
+              <!-- Entrada de nota -->
+              <input type="text" id="note-text" class="form-control me-2" placeholder="Que estas pensando?">
+              <!-- Boton para publicar nota -->
+              <button id="add-note" class="btn btn-primary">Publicar</button>
+            </div>
+          </div>
+        </div>
+        <!-- Lista de notas -->
+        <div id="note-list"></div>
+      </div>
+
+      <!-- Seccion de imagenes -->
+      <div class="col-md-6 mb-4">
+        <h3 class="text-white fw-semibold mb-3"><i class="bi bi-image me-2"></i>Imagenes de la Comunidad</h3>
+        <div class="card shadow rounded-4 mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Anadir nueva imagen</h5>
+            <div class="d-flex">
+              <!-- Entrada de URL de imagen -->
+              <input type="text" id="image-url" class="form-control me-2" placeholder="URL de la imagen">
+              <!-- Boton para publicar imagen -->
+              <button id="add-image" class="btn btn-primary">Publicar</button>
+            </div>
+          </div>
+        </div>
+        <!-- Lista de imagenes -->
+        <div id="image-list" class="row row-cols-1 row-cols-md-2 g-4"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Scripts de funcionalidad -->
+  <script src="js/storage.js"></script>
+  <script src="js/session.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

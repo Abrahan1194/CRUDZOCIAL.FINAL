@@ -1,0 +1,44 @@
+body {
+    background-image: url("../img/fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.card-glass {
+    background-color: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    border-radius: 1rem;
+}
+
+.input-group-text {
+    background-color: rgba(255, 255, 255, 0.15);
+    border: none;
+    color: white;
+}
+
+.form-control {
+    background-color: rgba(255, 255, 255, 0.15);
+    border: none;
+    color: white;
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.form-label {
+    color: white;
+}
+
+a {
+    color: #aad2ff;
+    text-decoration: none;
+    }
+
+a:hover {
+    text-decoration: underline;
+}

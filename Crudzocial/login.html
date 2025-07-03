@@ -1,0 +1,78 @@
+<!-- Documento HTML -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - Crudzocial</title>
+
+  <!-- Estilos de Bootstrap e iconos -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="css/profile_style.css">
+  <link rel="stylesheet" href="css/login_style.css">
+</head>
+
+<!-- Cuerpo centrado con fondo oscuro -->
+<body class="d-flex align-items-center justify-content-center vh-100">
+
+  <!-- Tarjeta de inicio de sesion -->
+  <div class="card card-glass p-4 shadow-lg" style="width: 25rem;">
+    
+    <!-- Encabezado visual -->
+    <div class="text-center mb-4">
+      <i class="bi bi-person-circle" style="font-size: 3rem;"></i>
+      <h4 class="mt-2">Bienvenido a Crudzocial</h4>
+      <p class="text-light">Inicia sesion con tus credenciales</p>
+    </div>
+
+    <!-- Formulario de inicio -->
+    <form id="login-form" novalidate>
+      
+      <!-- Campo correo -->
+      <div class="mb-3">
+        <label for="email" class="form-label">Correo Electronico</label>
+        <div class="input-group">
+          <span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
+          <input type="email" id="email" class="form-control" placeholder="ejemplo@correo.com" required>
+        </div>
+      </div>
+
+      <!-- Campo contrasena -->
+      <div class="mb-3">
+        <label for="password" class="form-label">Contrasena</label>
+        <div class="input-group">
+          <span class="input-group-text"><i class="bi bi-lock-fill"></i></span>
+          <input type="password" id="password" class="form-control" placeholder="••••••••" required>
+          <!-- Boton para mostrar u ocultar contrasena -->
+          <span class="input-group-text toggle-password" style="cursor: pointer;"><i class="bi bi-eye-fill"></i></span>
+        </div>
+      </div>
+
+      <!-- Checkbox para recordar sesion -->
+      <div class="form-check mb-3">
+        <input type="checkbox" class="form-check-input" id="rememberMe">
+        <label for="rememberMe" class="form-check-label text-black">Recordarme</label>
+      </div>
+
+      <!-- Boton de envio -->
+      <button type="submit" class="btn btn-primary w-100">Iniciar Sesion</button>
+    </form>
+
+    <!-- Mensaje de error -->
+    <div id="error-msg" class="mt-3 text-center text-danger fw-bold"></div>
+
+    <!-- Enlace a registro -->
+    <div class="mt-4 text-center">
+      <p class="text-black">No tienes cuenta? <a href="register.html">Registrate aqui</a></p>
+    </div>
+  </div>
+
+  <!-- Scripts de funcionalidad -->
+  <script src="js/storage.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>

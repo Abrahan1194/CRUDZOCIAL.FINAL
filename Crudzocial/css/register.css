@@ -1,0 +1,20 @@
+body {
+  background-color: #f8f9fa;
+}
+
+.card h4 {
+  font-weight: 600;
+}
+
+.card input::placeholder {
+  color: #adb5bd;
+  font-size: 0.9rem;
+}
+
+#register-form .btn {
+  font-weight: 600;
+}
+
+#error-msg {
+  font-size: 0.9rem;
+}

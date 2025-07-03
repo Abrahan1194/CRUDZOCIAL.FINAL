@@ -1,0 +1,37 @@
+body {
+    background-image: url("../img/fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: none;
+    color: #000000;
+}
+
+.form-control {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: #000000;
+}
+
+.form-control::placeholder {
+    color: #1b1a1a;
+}
+
+.form-label {
+    color: #181717;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
